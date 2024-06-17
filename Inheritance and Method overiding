@@ -4,7 +4,7 @@ namespace MyInheritanceApplication
 {
     class Animal  // Base class
     {
-        public void MakeSound() //Animal method
+        public virtual void MakeSound() //Animal method
         {
             Console.WriteLine("Some generic sound");
         }
@@ -12,7 +12,7 @@ namespace MyInheritanceApplication
 
     class Dog : Animal
     {
-        public void MakeSound()
+        public override void MakeSound()
         {
             Console.WriteLine("Bark");
         }
@@ -20,7 +20,7 @@ namespace MyInheritanceApplication
 
     class Cat : Animal
     {
-        public void MakeSound()
+        public override void MakeSound()
         {
             Console.WriteLine("Meow");
         }
